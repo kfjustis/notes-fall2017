@@ -1,0 +1,48 @@
+slides:
+- attendance 10%
+- 3-5 homeworks/labs for out-of-class learning 20%
+- challenges? 10%
+
+- 3 exams, 2 partial, 1 final -> exams 30% total, final exam 20%
+- 1 project 10%
+
+- lowest A -> 89%
+
+---
+
+- expectations
+
+- know main parts of computer
+- os
+- main memory (RAM)
+- i/o -> keyboard, mouse, monitor, mass storage
+
+- kernel
+- shell
+- file system
+- utilities (commands)
+
+- UNIX philosophy
+- small is beautiful
+- each program does one thing well
+
+- Linux
+- programs loaded into RAM with an owner
+- everything is case-sensitive
+- devices are files
+- directories are a hierarchy
+
+- POSIX
+- standards that define OS APIs and stuff for portability
+
+- why use UNIX/Linux?
+- lightweight
+- stable
+- been in development for a long time
+- open source
+
+- need to setup a debian 9 virtualbox
+- due Thu Aug 24th
+
+- GENI resources
+- portal.geni.net

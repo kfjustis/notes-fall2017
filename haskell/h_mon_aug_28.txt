@@ -1,0 +1,48 @@
+- homework
+-now we can do up to a capstone group number of members
+-groups still have one leader
+-if you use stack overflow answer, cite it!
+
+- lists
+-base data constructor is called nil
+-[] --empty list
+
+=ex=
+(x:xs)
+x: the head of the list
+xs: the rest of the list
+
+                 cons operator
+                  |
+                  v
+sidenote: [x] == x:[]  // this is example of parametric polymorphism
+
+// two cases
+
+// this is just for an empty list (so we write it first)
+length []    = 0
+
+// this could include empty list
+length(x:xs) = 1 + length xs
+
+// this is lazy evaluation
+ghci > length [1,2]
+    1 + (length [2])
+    1 + (1 + length [])
+    1 + (1 + 0)
+    2
+
+    // might think C is faster because of this. WRONG. lazy evaluation has a theorem
+       as to why. basically, call-by-need never uses more calls than eager evaluation.
+
+       functional is always about evaluation of an expression, not execution in memory!
+       very important to know, especially for final project
+=end ex=
+
+- let bindings
+
+- quick check haskell library for testing (or just run in ghci)
+
+- using instances
+
+- read chapters 1-4 http://learnyouahaskell.com/chapters

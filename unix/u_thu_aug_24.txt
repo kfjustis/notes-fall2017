@@ -1,0 +1,43 @@
+slides:
+- distribution: kernel + os
+
+- boot loader: program that boots the OS, GRUB
+- daemons: procs spawned by kernel to perform task on behalf of OS to manage system resource
+- service: prog that runs as a background process, i.e. httpd, nsfd, ftpd, and ntpd
+- filesystem: method of storing files
+
+- know the linux boot process
+
+- commands
+-who
+-w
+-which
+-cal
+-date
+
+- channels
+stdout
+stderr
+
+- control sequences
+ctrl-c interrupt
+ctrl-z kill
+ctrl-s suspend/pause
+ctrl-d specifies EOF
+
+- more commands
+-pwd: print working directory
+-which: prints path where something is installed
+-whatis: see description of man page
+-uname: sys info
+-touch: create file, change file timestamp
+-file: checks a file for its kind, printable text, exe, or a data file
+-pushd/popd: add filepath to stack to be used later
+-cp: copy files (-R -r recursive, -p preserve attributes, -i confirm overwrite)
+-mkdir: make dir (-p make many parent dirs /one/two/three all at once)
+-mv: move
+-rm: remove
+-" ; ": control operator that allows many commands at the same time
+
+challenge 1 due tues
+https://missouri.instructure.com/courses/9217/assignments/182023

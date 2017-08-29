@@ -1,0 +1,47 @@
+slides: #2 overview
+*review what a digital image is
+-this class only talks about grayscale images
+
+*review sampling and quantization (he wants us to know this a lot)
+-references slide 19 a lot
+-should have noise in the sampling (never perfect)
+-everything is real number (original information) since no quantization yet
+-memory dictates the quantization, you can only take finite samples
+    -sampling is dividing the timeline into uniform ticks and picking points (spatial domain)
+    -quantization ties those points to strict values e.g. float->integer (0-255)
+
+*review dynamic range
+-high means much contrast
+-low means washed out
+
+*storing images
+-2^k intensity levels -> "k-bit image" (ex: 256 -> 8-bit image)
+-there is a table on this slide
+
+*spatial vs intensity resolution
+-know the difference
+-spatial res: measure of smallest discernible detail in an image (measured in DPI in use)
+    ex: newspaper 75 dpi, our textbook 2400 dpi
+-intensity res: same but for intensity (8-bit, 16-bit, 32-bit)
+
+*aliasing effect
+-when sampling is not the same frequency as the original signal (undersampling)
+-good example on slide 28
+
+*quantization problems
+-false controuing slide 30
+
+*image interpolation
+-using known values to estimate values at unknown locations
+-4-adjacency
+
+*image resolution
+-if you decrease the resolution, it gets subsampled (downsampled)
+-but if you want to blow it back up to original size with a lower resolution
+    you have to upsample it, which requires pixel duplication
+
+*bit planes
+
+*dimensionality of digital images
+-images and videos are multidimensional signals
+-images 2d, videos can be seen as 3d

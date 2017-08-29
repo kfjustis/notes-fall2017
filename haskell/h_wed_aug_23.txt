@@ -1,0 +1,18 @@
+slides:
+- programming language design
+
+- attendance: 5%
+- midterm (9/28?): 25%
+- written homeworks + programming: 40%
+- final: 30%
+
+- both recommended texts online, check slides
+- http://learnyouahaskell.com (first four sections help the most)
+- anatomy of programming language (read this after) by William Cook
+
+- best to email between 9am-5pm Mon-Fri for a quick response
+
+main = print "hello world"
+
+- first assignment: due Friday, Aug. 25th in class
+- type "ghci" in a prompt and take a screenshot of the prompt and bring it to class

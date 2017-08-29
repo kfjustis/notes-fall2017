@@ -1,0 +1,19 @@
+slides:
+-what is a digital image?
+    -> two-dimensional function f(x,y) or matrix
+    -> x, y, f(x,y) are discrete and finite
+    -> f(x,y) intensity between [0-255] for black->white
+    -> top-left is (0,0)
+    -> raw image files from nice cameras apparently use floating point values
+
+-digital image information
+    -> needs a light, object, and sensor
+    -> the sensor converts the subject to digital image, some quality is always lost
+       since it has to be turned into pixels
+
+- sampling
+    -> trying to approximate a continuous shape as discrete (pp2 "overview", slide 20)
+    -> more samples gets you a closer approximation
+    -> sample the cells, quantize the intensity values (from float to int)
+
+- stopped on slide 23

@@ -1,0 +1,29 @@
+book:
+- digital image processing first (officially) or third is acceptable
+- digital image processing rafael c gonzalez first edition
+- blue background, big orange D in "Digital"
+
+mostly uses matlab, but any language is fine
+opencv is recommended - C++ yooooooooo
+
+3 programming assignments + final project (group or individual)
+first one due Sept 14
+
+each assignment is 20%
+final project is 40%
+
+cs4610 is this dude's computer graphics course... profit??
+
+slides:
+- no tests, son
+- A on final project = A in whole class
+
+- image is a two-dimensional function (array)
+- amplitude/value at any point is the intensity or grey level of the image at that point
+    -> all (x,y) values finite/discrete => image
+- DIP: processing digital images by means of a computer
+- image elements: picture elements, image elements, pels, pixels
+
+- talking about EM spectrum
+
+- series of pictures detecting different spectrum levels

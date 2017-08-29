@@ -1,0 +1,75 @@
+slides:
+- homework
+    max 4 per group
+    stanford plagiarism tool?
+    even solo coders get same workload as group
+
+- schedule
+    fri sept 8: homework 1 assigned
+    mon sept 11: no class, meet with group to do homework 1
+    fri sept 22: homework 1 due
+
+- haskell basics
+    -modern (pure) lazy functional language
+    -statically typed, supports type inference
+    -indentation matters
+    -capitalization matters (reserved for data constructors)
+
+    Type Inference
+    x = 1 + 2
+    - 1 and 2 are both ints, therefore x :: Integer
+    - actually inferred as a Num type, but Integer -> Num (is part of Num set, not sub-typing)
+
+    inc :: Integer -> Integer (:: = has type, -> = mathematical 1 in 1 out, you have Integer,
+        you get Integer value back)
+
+    check slides here for types and typeclasses reference
+
+- lists in Haskell
+    []        -empty list
+    [1]       -list with one element
+    [1, 2, 3] - a longer list
+
+    call by name vs call by need (evaluation strategy)
+    - call by need almost always faster because it does memoization (evaluate once then use reference)
+
+    -list patterns
+    x:xs matches to any list with one or more elements (first x is head, rest is rest of list)
+    x:y:z:xs matches to any list with three or more elements
+    [x] matches to any list with on element
+    [] matches to empty list
+
+    let x:xs = [1,2,3]
+    x is 1
+    xs is 2, 3
+
+- defining functions
+    defined as equations (review this slide)
+    with lambda abstraction
+
+- Haskell functions can be curried
+    add::Int -> Int -> Int
+    add x y = x + y
+
+    add3::Int -> Int
+    add3 = add 3
+
+    z::Int
+    z = add3 4
+
+- Haskell is pure
+    var not evaluated until it's needed even if it stores an expression
+    namespaces cleaned up behind the scenes?
+    haskell is pure mathematical, can be proven ; not the same as comparing two c programs
+
+- Parametric Polymorphism
+    review slides (tricky)
+
+- Type Class
+    ad-hoc polymorphism (remember this)
+
+- Motivating Type Classes
+    -overloading with type classes is akin to OO overloading
+    - two kinds of polymorphism in haskell
+        -ad-hoc
+        -parametric
