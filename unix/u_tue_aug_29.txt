@@ -1,0 +1,44 @@
+*$? prints the return value (exit code) of the previous command
+
+*& runs command in parallel
+
+*&& double ampersand
+-applies logical AND
+-only executes the second command if the first one is successful
+
+*|| double pipes
+-logical OR
+-only executes the second command if the first one fails
+
+*escaping characters
+-use "\"
+
+*long commands
+-you can type \ at the end of a line to continue on the next line
+
+*echo command
+-n don't print newline
+-e enable interpretation of backslash escapes
+- -e needed for these
+    \b backspace
+    \n
+
+*shell metacharacters - basic redirects
+> output redirection - write stdout to a file
+>> same as > but appends rather than overwrites
+| pipe symbol - sends output of one process into input of another
+< input redirection - reads stdin from a file
+
+use cat command to display output after a command
+
+*keyboard shortcuts
+ctrl+a home
+ctrl+e end
+
+*wildcards
+-* matches any number of characters in a filename
+-? matches any single character in a filename
+-[] matches any chars in the brackets
+
+*file viewing
+-cat -- cat [flags] [filename]
