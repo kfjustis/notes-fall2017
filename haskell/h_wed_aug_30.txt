@@ -1,0 +1,14 @@
+notIn x xs = not $ x `elem` xs
+-$ here tells it to evaluate the expression on the right first, then do the not
+
+*Foldable types
+-read more about this
+
+*data vs type
+-not sure about this either
+
+init function useful for homework 3, he says
+-returns everything but the last in the list
+
+-don't confuse with sets, lists can obviously  have repetition
+-knapsack questions?
