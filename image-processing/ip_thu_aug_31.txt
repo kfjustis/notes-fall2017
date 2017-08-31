@@ -1,0 +1,40 @@
+*bit planes
+-go look this up you walked in late
+-look at all the bytes, each 0-th bit is bit plane 0
+                        each 1-st bit is bit plane 1
+                        etc...
+
+*color:rgb cube
+-lots of ways to represent color
+
+*image enhancement
+-contast(?) example
+
+*denoising
+-smoothing: make the neighbors look alike (don't just change one neighbor, adjust both halfway for most fair)
+
+*image deblurring
+-machine learning
+
+*image registration
+-rotated images compared to front-on recognition
+
+*image in-painting
+-removing large obstructions
+
+*image stylization
+-turning into a painting example
+
+*edge detection
+-more like lines of discontinuity
+
+*face detection
+
+*image segmentation
+
+*image matching/dismatching
+
+*image compression
+-takes advantage of redundancy
+-lossless vs lossy
+-video compression
