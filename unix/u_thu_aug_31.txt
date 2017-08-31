@@ -1,0 +1,18 @@
+*cat command
+-view file contents
+
+*more/less
+
+*head/tail
+-head print first # lines
+-tail print last # lines
+
+*sort
+
+*uniq
+
+*cut
+
+*translate (tr)
+
+*tee
