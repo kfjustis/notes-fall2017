@@ -1,0 +1,11 @@
+* going over user/file permissions
+
+* chmod - change file permissions
+
+* user ids
+
+ls -l will show permissions on a file
+
+* chmod can set with octal values or u+x etc...
+
+* chown - change ownership
