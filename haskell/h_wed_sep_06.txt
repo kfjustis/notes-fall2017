@@ -1,0 +1,17 @@
+* let the type be your guide
+-looking at how to figure a function type
+- recall :: means has type
+
+* checking types
+-type checking
+-type inferencing
+
+* homework 1
+-submission must load and typecheck
+-prob1 char -> char
+-make sure you give every function a type signature (otherwise lose points)
+-1990 is not leap year, 2000 is (just do 2000 mod 4)
+    -use div and mod
+
+* variable patterns
+-wildcards best for catch all at the end of if logic / pattern matching

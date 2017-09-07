@@ -1,0 +1,8 @@
+* A* path finding
+-heuristic must be admissible (doesn't overestimate)
+-frontier: the outermost nodes that have been explored by the algorithm
+
+-expands the fewest amount of nodes during pathfinding
+-finds shortest path, with heuristic, otherwise just use dijkstra's
+
+* Genetic Algorithm
