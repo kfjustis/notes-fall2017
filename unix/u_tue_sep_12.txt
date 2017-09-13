@@ -1,0 +1,12 @@
+* umask
+
+* archiving/compression
+-using gzip
+-tar
+
+* compress all files in home dir
+$ tar -cvf backup1.tar
+
+* find
+
+* diff
