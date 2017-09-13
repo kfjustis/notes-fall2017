@@ -1,0 +1,5 @@
+* more unit testing stuff
+
+* quickcheck library
+-lets you test a bunch of random data against your functions
+-sometimes easier than coming up with your own tests every time
