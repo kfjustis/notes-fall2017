@@ -1,0 +1,29 @@
+*histogram assignment
+
+*intensity histogram
+-4x4, 4bits/pixel image
+-values are from 0 to 15
+-you just count how many of each value
+
+-high-contrast images have a more spread out histogram, low-contrast more compact
+
+*cumulative histogram
+-the current Q(k) = sum of all previous occurrences
+
+*histogram equalization
+-Goal: obtain an output image with a uniform PDF (continuous case)
+
+*assignment
+-histogram equalization
+-given an input r, you ouput s
+
+pseudocode
+1) compute the histogram (H) of the first image (r) -- the source image
+2) convert histogram into PDF -> pdf = H / M*N (MN are dimensions)
+3) do transformation function --> sk = T(rk) = (L-1)sum(j=0, k)(pr(rj)) (look at the 3.3.1 white slide)
+	-where k is any number between 0-255
+4) k -> round the (sk) values into real numbers
+
+upload the homework to canvas
+
+due October 3, 2017 at beginning of class, bring hard copies
