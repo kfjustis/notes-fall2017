@@ -1,0 +1,12 @@
+*reverse a list
+prob5 :: [a] -> [a]
+prob5 xs = prob5' [] xs
+    where
+        prob5' :: [a] -> [a] -> [a]
+        prob5' acc [] = acc                   -- base clause
+        prob5' acc (x:xs) = prob5' (x:acc) xs -- inductive clause
+
+*accumulator passing style is what this is known as
+-useful for mimicking variable storage during a loop. since we don't
+ have loops in haskell, this is how you pass stuff around to the next
+ function call
