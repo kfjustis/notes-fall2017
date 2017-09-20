@@ -1,0 +1,6 @@
+*higher-order functions
+
+*you can define nameless functions (anonymous)
+
+-regular: inc x = x + 1
+-lambda:  \x -> x + 1
