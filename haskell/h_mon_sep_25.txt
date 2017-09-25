@@ -1,0 +1,37 @@
+thinking functionally, richard bird - recommended good
+
+* no class until october 9th
+
+*trees
+
+*binary trees
+-you define structures in haskell with data constructor
+ex: data Btree a = Leaf a | Fork (Btree a) (Btree a)
+Fork (Fork (Leaf a) (Fork (Leaf b) (Leaf c))) (Leaf d)
+
+*finding height (length of longest path)
+height :: Btree a -> Int
+height (Leaf _)     = 0
+height (Fork t1 t2) = 1 + max (height t1) (height t2)
+
+*finding size (how many nodes there are total)
+size :: Btree a -> Int
+size (Leaf _)     = 1
+size (Fork t1 t2) = size t1 + size t2
+
+*flattening a tree
+-what should the type be?
+flatten :: Btree a -> [a]
+flatten (Leaf x)     = x
+flatten (Fork t1 t2) = flatten t1 ++ flatten t2
+
+*mapping to a tree
+mapBtree :: (a -> b) -> Btree a -> Btree b
+mapBtree f (Leaf x)     = Leaf (f x)
+mapBtree f (Fork t1 t2) = Fork (mapBtree f t1) (mapBtree f t2)
+
+
+*generalizing
+foldBtree f g (Leaf x)     = f x
+foldBtree f g (Fork t1 t2) =
+    g (foldbtree f g t1) (foldBtree f g t2)
