@@ -1,0 +1,11 @@
+*foldr
+
+*look at it graphically in slides
+
+*foldl more like accumulator passing style
+-the default value does not stay the same throughout like foldr
+-ex: for reversing a list, foldl is better than foldr (linear vs n^2)
+
+*function composition
+A -> f -> B -> g -> C |--> this is g o f
+-composition is defined with the '.' operator
