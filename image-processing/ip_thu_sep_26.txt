@@ -1,0 +1,14 @@
+*image filtering
+-def: modify the pixels in an image based on some function of a local neighborhood of the pixels
+
+*linear filtering
+-linear case is most simple and most useful
+    -replace each pixel with a linear combination of its neighbors
+-the prescription for the linear combination is called the convolution kernel
+
+-dividing each pixel value makes it more blurry overall
+-blurring reduces contrast (lowers the difference between values)
+
+*smoothing with average vs smoothing with gaussian
+
+-may need to use zero-padding for proper calculations - depends on image size versus the kernel/filter

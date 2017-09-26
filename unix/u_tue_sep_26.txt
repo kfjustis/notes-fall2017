@@ -1,0 +1,47 @@
+*commands that are symbols
+-() executed in a subshell
+-{} executed in current shell, etc..
+
+-$() execute command vs ` ` does the same thing
+
+-$(()) arithmetic expansion
+$ echo There are $((60*60)) seconds in an hour
+
+-let keyword assigns evaluation -- instead of let you can
+also use (())
+
+-[[]] conditional expression where result is a boolean
+-using values inside it require the $ to access vars
+
+*for loops
+ex:
+    for i in 1 2 4 6 8
+    do
+        echo $i
+    done
+
+ex with three parameters:
+    for (( i=1; i<=10; i++ ))
+    do
+        echo $i
+    done
+
+*infinite loops and file globbing
+
+    #!/bin/bash
+    for (( ; ; ))
+    do
+        echo infinite loops [ CTRL+C to stop ]
+        sleep 1
+    done
+
+*executing from command line without a script
+    $ for (( ; ; )) ; do echo hey ; done
+
+*file navigation
+
+    #!/bin/bash
+    for file in /etc/*
+    do
+        echo $file
+    done
