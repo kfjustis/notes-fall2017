@@ -1,0 +1,13 @@
+*project documentation part 1 stuff
+
+*PROJECT STATEMENT
+-intro to the project
+-problem you're trying to fix
+
+*REQUIREMENTS
+-wants extreme detail, so often students lose points on this
+-hardware requirements
+-software requirements
+-user requirements
+
+due 10/9/2017
