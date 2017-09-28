@@ -1,0 +1,37 @@
+*have a cover page for your assignment report
+
+*more linear filtering
+
+*useful for smoothing/blurring
+
+*image sharpening
+-moon example
+
+*unsharp masking
+-blur the original image
+-subtract the blurred image from the original (subtract the Laplacian)
+-add the resulting mask to the original
+-Laplacian is a way to measure the difference between you and your neighbors
+
+*median filters: principle
+-non-linear filter
+method:
+    1. rank-order neighborhood intensities
+    2. take middle value
+
+    no new gray levels emerge...
+
+-median brings outliers back to decent range, whereas mean smooths shape
+    -preserves discontinuity as well, meaning it preserves the edges
+    whereas smoothing/mean does not
+
+-continuous application of median can lead to patchy effects, start losing details of course
+
+*gaussian
+-do the gaussian smoothing first, then downsample, repeat
+-leads into face-detection technology; pyramid -> input for machine learning neural network
+
+*assignment 2
+-part 1 : image smoothing
+-part 2 : image sharpening
+-part 3 : gaussian pyramid
