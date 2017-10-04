@@ -1,0 +1,22 @@
+*more shell scripting test conditions
+
+*while loop
+ex:
+
+#!/bin/bash
+i=10
+while [ $i -ge 0 ]
+do
+    echo number: $i
+    let i--
+done
+
+*infinite while loops
+
+*infinite while loop example
+
+*until loop
+-runs until the condition is evaluated as true, then loop stops s
+
+*shift statement
+-allows you to go through command arguments 1 by 1
