@@ -1,0 +1,44 @@
+*origin of edges
+-they mark areas of discontinuity
+
+caused by different things:
+-surface normal discontinuity
+-depth discontinuity
+-surface color
+-illumination
+
+*characterizing edges (1D)
+-an edge is a place of rapid change in the image intensity function
+-take the first derivative, extrema are where the edges go
+-you can also take the second derivative and find the 0 points
+
+*effects of noise
+-noise is big problem with real images
+
+*solution: smooth first
+-to find the edges, look for peaks in d/dx ( f * g ) where g is the kernel
+-smooth with gaussian smoothing, then take derivative and the extreme should be apparent
+
+or
+
+-you can do smoothing, then f * g convolution, then take the derivative
+d/dx(f * g) = f * (d/dx (g))
+-this works because derivative of gaussian is still gaussian and because convolution is associative
+
+*tradeoff
+-Smoothed derivative removes noise, but blurs edge. Also find edges at different "scales".
+
+*gradients and edges
+-points of sharp change in an image are interesting
+    -change in reflectance
+    -change in object
+    -change in illumination, etc...
+
+*non-maximum suppression
+
+
+-you can compute both the x and y derivative of gaussian and then combine them for best results
+    -by combine: you use gradient magnitude sqrt((Ix)^2 + (Iy)^2) = || grad I ||
+    -tan theta = Iy / Ix
+
+-you can also get the orientation at each pixel: theta = atan2(gy, gx)
