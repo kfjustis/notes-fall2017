@@ -1,0 +1,9 @@
+*review shell scripting
+
+*control structures
+if <condition>
+then
+    ...
+else
+    ...
+fi
