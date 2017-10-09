@@ -1,0 +1,13 @@
+*just going over directions for homework 2
+
+*have to use map and filter for problem 1
+
+*list length being even or odd has something to do with prob4 and prob5
+
+*fold on a btree
+
+*parts of language
+-symbols
+-syntax
+-grammar
+-interpretation
