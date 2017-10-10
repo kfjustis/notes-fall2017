@@ -1,0 +1,3 @@
+*more design doc stuff
+-use lots of graphs
+-design usually takes around 30 pages

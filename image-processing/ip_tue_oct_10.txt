@@ -1,0 +1,52 @@
+*origin of edges
+-surface normal discontinuity
+-others
+
+*characterizing images
+
+*gradient-based methods
+image -> gradient operator -> thresholding -> edge map
+
+if the abs val of the gradient operator is greater than the user defined threshold, then
+the value must be an edge = 1, otherwise it is not an edge -> = 0
+
+method:
+1) given an image I <- this is the input
+2) compute the gradient triI = (dI/dx, dI,dy)
+3) compute the gradient magnitude ||triI|| = sqrt((Ix)^2 + (Iy)^2)
+4) edge map by thresholding <- this is the output (also called edge image)
+    E(x,y) {
+        1, ||triI|| > t
+        0, otherwise
+    }
+    This will make the background black and the edges appear lighter.
+
+Works for ideal image. Real image would have a lot of noise, which the gradient is sensitive to.
+Would be better to smooth the image before computing the gradient.
+
+Remember to do both the gradient in the x direction and the y direction and then you can add them
+together. He recommends Sobel gradient operator. We don't really talk about the other one.
+
+*designing an edge detector
+-criteria for a good edge detector
+    :good detection: optimal detector should find all real edges, ignoring noise or other artifacts
+    :good localization:
+        -the edges detected must be as close as possible to the true edges
+        -the detector must return one point only for each true edge point
+-cues of edge detection
+    :differences in color, intensity, or texture across the boundary
+    :continuity and closure
+    :others
+
+*canny edge detector
+-most widely used edge detector in computer vision
+-theoretical model: step-edges corrupted by additive Gaussian noise
+
+    *steps
+    1) input image
+    2) smoothing with Gaussian
+    3) differentiating along x and y axis
+    4) find peaks in gradient image
+    5) thresholding
+    6) thinning (locating edge strings) - limiting the width of the edge to 1 pixel, usually
+    7) output the edge map

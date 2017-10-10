@@ -1,0 +1,10 @@
+*what is GENI?
+-virtual simulation environment for networks and stuff
+
+everything is broken up into projects
+projects can have multiple slices (containers)
+
+RSpecs - xml docs in a prescribed format to describe resources
+
+GENI Aggregates - provide the real distributed resources
+ex: some rack at a university used for GENI alone
