@@ -1,0 +1,20 @@
+*goes over homework 3 again
+
+*hysteresis thresholding
+-if you use the same threshold for an entire line, you could end up breaking parts that are already thin.
+ we see this problem when using Adobe Flash all the ding-dang time.
+
+-to follow a line, you look at either side of a point for a pixel with the gradient in the same direction.
+ By either side, we mean looking tangent in either direction to the gradient of the current point.
+
+*laplacian-based methods
+-much more simple than canny
+-seems more quick and dirty
+
+image -> laplacian operator ->
+
+-higher sigma values will lose more sharpness
+-another way to detect an extremal first derivative is to look for a zero second derivative
+-sensitive to noise so it requires smoothing
+
+-make sure you allow users to change the parameters (command line)
