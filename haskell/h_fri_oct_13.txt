@@ -1,0 +1,8 @@
+*problem 2
+-you can use GHC_OPTION to enable ghci to warn you for every instance of a function that doesn't
+ have a type signature
+
+*reviewing language / context free grammar
+
+-making types from scratch
+-refer to this code: https://missouri.instructure.com/courses/9417/files/1683720
