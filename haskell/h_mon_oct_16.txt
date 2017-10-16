@@ -1,0 +1,33 @@
+*writing more flexible code
+    -either
+    -maybe
+
+example:
+    data Maybe a = Nothing
+                   | Just a
+
+    data Either a b = Left a
+                   | Right b
+
+*"Error handling" vs "Error propagation"
+
+*Problem solving techniques
+1. Divide and Conquer
+2. Genetic/Dynamic
+3. Functional vs Imperative
+
+*interpreter stuff
+module ArithAST (
+    Op(..)
+   ,Exp(..)
+) where
+
+data Op = Plus
+        | Minus
+        | Times
+        | Div
+        deriving Show
+
+data Exp = Const Int
+         | AExp  Op Exp Exp
+         deriving Show
