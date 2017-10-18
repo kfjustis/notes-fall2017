@@ -1,0 +1,3 @@
+*ways to think about interpreters
+
+meta language (the haskell) vs object language (the js-like langauge)
