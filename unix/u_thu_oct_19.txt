@@ -1,0 +1,21 @@
+*network stuff
+-home network vs enterprise
+
+*protocol layers
+
+*protocol stack
+-application
+-transport
+-network
+-link
+-physical
+
+*ip address
+
+*ping command
+ping -c # domain
+-lets you specify a certain number of packets
+-RTT : round trip time
+
+*DNS
+-domain name system
