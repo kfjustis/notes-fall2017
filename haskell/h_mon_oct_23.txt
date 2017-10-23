@@ -1,0 +1,6 @@
+*review do notation
+-mentioned this stuff would be on the final
+
+*alternative do notation
+-monad stuff
+-using bind
