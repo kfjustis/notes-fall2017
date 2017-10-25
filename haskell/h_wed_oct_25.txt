@@ -1,0 +1,54 @@
+*building parsers using Monads
+-parametric vs ad-hoc polymorphism
+
+-have to define creating new instances, AKA return
+-have to define appending sequences, AKA bind
+
+*what is a parser?
+-a program that analyses a piece of text to determine its syntactic structure
+ex: 2*3+4 -> turn that into a tree
+                +
+              /   \
+             *     4
+           /  \
+          2    3
+
+*what a front-end does
+-ascii form -> "lexing" happens -> symbol form -> "parsing" happens -> abstract syntax tree
+-lexing tokenizes strings
+-parsing "tokenizes" the symbols that are generated from lexing
+-you can't give meaning to a bunch of symbols without a syntactic structure
+
+*where are they used
+-pre-processing some kind of input for a program to use
+-ghci > haskell programs, unix > shell scripts, chrome > html documents
+
+*the parser type
+-in haskell (functional languages), parsers are viewed as functions
+-parser function takes a string and outputs a tree
+    ex: type Parser = String -> Tree
+-however, a pareser might not require all of its input string, so we also return any unused input
+    ex: type Parser = String -> (Tree, String)
+-string might be parsable in many ways, including none, so we generalize to a list of results
+    type Parser = String -> [(Tree, String)]
+
+-parser might not always produce a tree, so we generalize to a value of any type
+
+    ex: data Parser a = P (String -> [(a, String)])
+
+    -use a instead of tree because trees don't allow for cycles and you may need reference
+    to earlier part in program
+    -uses list because there could be more than one interpretation
+    -might need to do something like this on the final
+    -P is a constructor
+    -left side of = is the data type
+    -type level stuff is "Parser a"
+    -if you define an actual function, you use "P"
+    -if you see "new type" instead of "data", it's the same idea
+    -if you see "type", that's a synonym
+
+*basic parsers
+-using Char example
+
+*sequencing
+-a sequence of parsers can be combined as a single composite parser using the keyword do
