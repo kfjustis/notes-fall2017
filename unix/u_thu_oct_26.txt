@@ -1,0 +1,10 @@
+*stuff about services
+-/etc/init.d is where all the traditional sysvinit scripts for upstart live
+-they have different methods: start, stop, status, restart)
+-two options to work with (Traditional/Upstart)
+-starting a server
+    Traditional: /etc/init.d/myservice start
+    Upstart: service myservice start
+
+*more network commands
+*tcp/ip

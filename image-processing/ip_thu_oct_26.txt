@@ -1,0 +1,10 @@
+-dude used sobe operator for convolution
+-apply for both x and y direction
+-basically just follow the assignment instructions
+
+*advice:
+-pay attention to zero padding
+-group the angles (45/2 -> -45/2) == 0,
+ halfway between 90-45 and 45-0 == 45, etc...
+
+*need to write a custom convolution function
