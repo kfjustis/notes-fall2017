@@ -8,3 +8,22 @@
 
 *more network commands
 *tcp/ip
+*ports
+-1-1023 are reserved (well-known ports)
+-1024-49151 are user level ports
+-49152-65535 are private to the machine's ports
+-clients use ephemeral ports
+
+*major network services
+-telnet: provides a virtual terminal for a remote user
+-ftp
+-ssh: like telnet but uses encryptions
+-smtp: simple host-t-host mail transport
+-imap: email stuff
+-http: protocol for distributed, collaborative, hypermedia
+
+*IPv4
+
+*converting between IP address in decimal and binary
+
+*IP address classes
