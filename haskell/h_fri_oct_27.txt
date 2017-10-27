@@ -1,0 +1,21 @@
+*midterm
+-true/false/short answer
+-write all answers on the answer sheet
+-have to turn it in, in-person, in-class
+
+-go back and look at trees
+-ex is a labled fork tree, but notes has an unlabeled fork
+
+*back to parsers
+-data Parser a = P (String -> [(a, String)])
+- P is a constructor, but the type level notation is a Parser
+- a is the actual item that you're parsing
+
+{-# OPTIONS_GHC -fno-warn-tabs #-}
+
+-his code uses newtype to save computation costs over data declaration
+-not the same as a type synonym
+
+-a functor is a function that maps along a string of inputs
+-map function is a functor
+-learn you a haskell talks about functors well
