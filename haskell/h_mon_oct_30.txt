@@ -1,0 +1,3 @@
+*basic parsers continued
+-you can give lambda functions constraints but it has to be done in the body of the function.
+ it's not the same syntax as a regular type declaration
