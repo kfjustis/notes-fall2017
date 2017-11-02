@@ -1,0 +1,14 @@
+*New Network diagram stuff
+
+*Why do we need DHCP server?
+-Dynamic Host Configuration Protocol
+-means we don't have to manually configure each connection
+
+*DHCP lease explanation
+-DHCP client automatically attempts to renew its lease as soon as
+ 50 percent of the lease duration has expired
+-if the dhcp client fails to renew its lease the first time, then it will again when
+ 87.5 percent of the current lease duration expires
+-if the client fails to get network config from a dhcp server, then it
+ will use an ip from the range 169.254.0.0 - 169.254.255.255,
+ Automatic Private IP Addressing (APIPA)

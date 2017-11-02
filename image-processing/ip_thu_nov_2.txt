@@ -1,0 +1,16 @@
+*Template matching
+-for object recognition/detection
+1) chamfer distance matching
+2) convert from an edge map into a distance function
+
+*distance transform
+-if on matching edge, value is 0, otherwise the value is bigger
+-display this value with grayscale intensities
+-known as distance transform
+
+*benefits
+-you don't care about the input color
+-you just care about the shape
+
+can also use histogram of the gradient by separating into
+4 parts.
