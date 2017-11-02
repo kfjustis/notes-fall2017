@@ -1,0 +1,15 @@
+hw3 notes
+
+-have to write our own tests
+
+prob1
+-use read function
+-useful to know how to apply constraint to lambda function
+
+prob2
+-can use error without stacktrace if you want
+-accumulator passing style
+-pull item off the stack
+
+prob3
+-write a save eval function
