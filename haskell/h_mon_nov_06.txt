@@ -1,0 +1,36 @@
+*words function will split up a string based on whitespace
+-then you can call map on that
+
+*make sure you name the tests appropriately
+
+*homework 3
+
+*prob1
+-use words to handle whitespace or it's awful
+
+*prob2
+-might need a stack helper function
+-do all pattern matching for good cases first, then pattern match
+ for bad case and handle the error then
+-look at accumulator passing style
+    -list handles processed operand
+    -list handles what you're going to be processing
+    -when stack empty, look at length of the other stack
+
+*prob3
+-the result data type is like the either type
+-may need a helper for this as well
+-closely related to prob3, easily adjusted
+
+*prob4
+-takes a valid polish notation expression and spits out an infix notation
+-prob2 and prob3 implementations give insight to doing this one
+
+-you can still get full test points if you write hspec tests that work
+
+start reading anatomy of programming languages - chapter 1-3
+
+-questions on final :D
+t/f haskell is an impure dynamically typed language -> F
+t/f haskell supports dependent typing natively -> F
+t/f haskell supports record types -> T
