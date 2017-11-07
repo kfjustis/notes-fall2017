@@ -1,0 +1,54 @@
+*review bash scripting syntax
+
+*know GENI terminologies
+
+*know basic network stuff
+
+*know service commands
+
+*know setting up ssh
+
+*know problem with using passwords and usernames (authentication methods)
+
+*generating public and private keys
+
+*copy keys from source to remote (scp command or ssh-copy-id command)
+
+*network services
+-ipv4
+-converting ip addresses to binary and backwards
+-ip address classes
+
+*delivery modes
+-unicast
+-broadcast
+-multicast
+-anycast
+
+*transferring files between two servers
+-scp command (don't forget how to specify port number with -P)
+
+*internet protocol stack
+-7 layers OSI reference model
+
+*data encapsulation across network
+-packet vs datagram vs frame
+
+*nslookup command
+
+*other commands
+-know the windows version of these commands too
+-ping
+-ipconfig/ifconfig
+-nslookuo
+...
+
+*dhcp communication process
+-discover
+-offer
+-request
+-ack
+-dhcp leases
+
+*obtaining network configuration stuff
+-customizing parameters
