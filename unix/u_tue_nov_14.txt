@@ -1,0 +1,9 @@
+*filesystem stuff
+
+*going over the different directories
+
+*hard disk naming conventions
+
+*swap space management
+
+*filesystem types
