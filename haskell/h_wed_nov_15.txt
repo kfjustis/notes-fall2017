@@ -1,0 +1,40 @@
+*good for testing prob2
+
+error_example :: IO ()
+error_example = hspec $ do
+    describe "Eval" $ do
+        context "For division by 0" $ do
+            it "should return an error" $ do
+                evaluate (eval [Val 1, Val 0, IntDiv]) `shouldThrow` anyException
+
+        context "For Bad Syntax" $ do
+            it "should return an error" $ do
+                evaluate (eval [IntDiv, Val 1, Val 0]) `shouldThrow` anyException
+
+*not advised for testing prob3
+
+push :: a -> [a] -> [a]
+push x stack = x:stack
+
+pop :: [a] -> (a, [a])
+pop []     = error "Cannot pop an empty stack."
+pop [x]    = (x,[])
+pop (x:xs) = (x,xs)
+
+top :: [a] -> a
+top []     = error "No top on an empty stack."
+top (x:xs) = x
+
+then use first, for the head or second for the rest of the stack
+
+* type prob3 PExp -> Int
+
+evalRPN ops = go' ops []
+    where go' (Plus:rest) (r:l:vals)    = go' rest ((l + r):vals)
+          go' ((Val i):rest) vals       = go' rest (i:vals)
+          go' (Mul:rest) (r:l:vals)     = undefined
+          go' (Minus:rest) (r:l:vals)   = undefined
+          go' (IntDiv:rest) (0:l:vals)  = undefined
+          go' (IntDiv:rest) (r:l:vals)  = undefined
+          go' [] [i]                    = i
+          go' _ _                       = undefined
