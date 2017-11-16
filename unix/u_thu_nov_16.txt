@@ -1,0 +1,3 @@
+*more filesystem stuff
+
+1. Attach the new hard disk
