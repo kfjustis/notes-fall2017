@@ -1,0 +1,13 @@
+*group project for the final
+-baseline is 75%, but you can get a better grade if you do the second problem
+-better than individual take home final
+
+*variables as containers
+
+*mutation
+
+*substitution
+- -> meaning "bound to"
+x -> 5, x + 2, ==> 5 + 2
+
+*multiple bindings
