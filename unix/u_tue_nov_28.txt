@@ -1,0 +1,44 @@
+*final exam on Dec. 7th
+
+*regular expressions
+-filter text based on matching patterns
+
+*what is a regular expression?
+-a regex describes a set of possible input strings
+-comes from "finite automata theory"
+-used all over in Unix like vi, grep, sed, emacs, and Python
+
+*regex
+-simplest expression is just a string of matching characters
+-grep and egrep are the main ones (major syntax differences, egrep looks more simple)
+-grep requires escaping special characters with a "\"
+
+grep 'cks' file.txt
+-matches on any substring containing 'cks'
+
+-the '.' char can be used to match any character
+
+grep 'o. ' file.txt
+
+*character classes
+-character classes '[]' can be used to match any specific set of characters
+-grep 'b[eor]at' file.txt will match on beat, brat, and boat
+
+*negated character classes
+-grep 'b[^eo]at' file.txt will be negation, so only matches on brat
+
+*more char classes
+-[aeiou] will match any of the chars a, e, i, o, or u
+-/usr/share/dict/words
+
+*more char classes
+-ranges can be done like [1-9] same as [a-e] or [a-e1-9]
+
+*name char classes
+-[[:alpha:]] or [a-zA-Z], [[:alnum:]] or [a-zA-Z0-9], [45[:lower:]] or [45a-z]
+
+*anchors
+-'^' means beginning of the line
+-'$' means end of the line
+-grep '^[aeiou]d...d[aeiou]$' would be a vowel at beginning, followed by a d, then any 3 chars,
+then another d and end with a vowel
