@@ -1,0 +1,10 @@
+*answering what functions are
+-can use first class functions as input to other functions
+-also lets you manipulate recursion directly
+
+*top-level function definitions
+-C only lets you define at the top level
+
+*concrete and abstract syntax
+
+*evaluating top-level functions
