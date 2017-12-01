@@ -1,0 +1,13 @@
+*more wildcards
+-() to match on a set of characters
+-can still apply '+' to these
+
+*ranges
+-{n} means exactly n occurrences
+-{n,} means at least n occurrences
+-{n,m} means at least n occurrences but no more than m occurrences
+-grep requires backslashes before the curly braces
+
+*backreferences
+-\n is the backreference specifier where n is a number
+-\n meaning \1, \2, etc...

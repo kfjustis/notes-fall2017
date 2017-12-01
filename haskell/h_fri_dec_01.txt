@@ -1,0 +1,30 @@
+*going over final code project
+
+-solid attempt at problem 1 to get the 75%
+-one unit test for problem
+
+*prob1
+-extend definition of eval function to handle multiple declarations
+
+*prob2 requires 2 functions
+-free by rule 1
+-free by rule 2: only the body has scope under declarations, decs themselves are not in scope,
+m is a free variable in the example
+-have to use accumulator passing style, first is list of free vars seen so far, 2nd is expression
+actually being evaluated
+-need at least two unit tests
+
+*prob3
+-call free and use free by rule 2 with empty accumulator
+-have to use haskline (cabal update, cabal install haskline)
+-have to read from file or command line
+
+can get more than points listed if he feels you have it a really good try
+
+*notes on recursion
+x = f(x)
+
+-x is the fixed point for the function
+-concept of greatest and least fix point function
+
+-tail recursion (safe to implement in hardware)
